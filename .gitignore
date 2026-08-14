@@ -1,0 +1,13 @@
+# Virtual environment
+financial-supply-chain.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+.env.*

@@ -17,3 +17,7 @@ We ran `data_validation.sql` to verify the dataset before analysis:
 - Duplicate Detection: Confirmed there are no duplicate date and ticker pairs using GROUP BY with a HAVING count > 1 filter.
 - Value Sanity: Checked that prices and volumes contain no negative values or zeros.
 - Candlestick Logic: Checked that daily highs are greater than or equal to open, close, and low prices, and lows are less than or equal to open and close prices.
+
+
+---
+__Note:__ on Data Architecture: While a ~3,200-row dataset can easily be processed as a flat file, this project was deliberately structured to simulate an enterprise financial data pipeline. By designing a relational schema, executing the loading process, and enforcing strict data validation at the database level in PostgreSQL, the integrity of the market data is guaranteed prior to analysis. The validated database is connected directly to the Jupyter analytical environment to execute the core time-series analysis.

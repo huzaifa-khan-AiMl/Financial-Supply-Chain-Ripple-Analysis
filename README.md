@@ -133,7 +133,7 @@ Adjusted close is used for return analysis so that corporate actions such as spl
 
 ---
 
-## 📈 Analysis Performed
+## Analysis Performed
 
 ### 1. Long-Run Market Context
 The project first examines the broader 2017–2020 period to establish normal-period behavior, the 2018 decline, and post-event recovery.
